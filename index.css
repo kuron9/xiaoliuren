@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "阿里妈妈数黑体 Bold";
+    font-weight: 700;
+    src: url("//at.alicdn.com/wf/webfont/bhUpbsWr32o1/ukoOtv2nASodnqXi7-146.woff2") format("woff2"),
+        url("//at.alicdn.com/wf/webfont/bhUpbsWr32o1/iY3JhKoKJNsk-qhXNk3H0.woff") format("woff");
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(#0a2e38, #000);
+    height: 100vh;
+    /* overflow: hidden; */
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#clock,
+#nong_li {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+    font-family: 'Share Tech Mono';
+    text-shadow: 0 0 20px #0aafe6, 0 2px 0 #daf6ff;
+}
+
+#nong_li {
+    margin-top: 100px;
+}
+
+#clock {
+    margin-top: 50px;
+}
+
+#liuren_gua {
+    display: none;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 15%;
+}
+
+#btn1,#btn2 {
+    margin-left: 50%;
+    margin-top: 10%;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    width: 200px;
+    height: 80px;
+    color: #fff;
+    border-radius: 50px;
+}   
+
+
+#btn1:hover,#btn2:hover{
+    animation: sun 10s infinite;
+}
+
+
+@keyframes sun{
+    100%{
+        background-position: -400% 0;
+    }
+}
+
+#btn2 {
+    display: none;
+}

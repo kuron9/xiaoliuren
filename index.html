@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小六壬</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="nong_li"></div>
+    <div id="clock"></div>
+    <div id="liuren_gua">
+        <div id="gua"></div>
+        <div id="guaci"></div>
+        <div id="jue"></div>
+    </div>
+
+    <script src="./nong_li.js"></script>
+    <script src="./index.js"></script>
+    <button id="btn1">小六壬</button>
+    <button id="btn2">返回</button>
+    <script>
+        var btn1 = document.getElementById('btn1')
+        var btn2 = document.getElementById('btn2')
+        var liuren_gua = document.getElementById('liuren_gua')
+        btn1.onclick = function () {
+            liuren_gua.style.display = "block";
+            btn2.style.display = "block";
+            btn1.style.display = "none";
+            console.log(liuren_gua);
+        }
+        btn2.onclick = function () {
+            liuren_gua.style.display = "none";
+            btn2.style.display = "none";
+            btn1.style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>
